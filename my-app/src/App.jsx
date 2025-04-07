@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+import DataTable from "./dataTable";
+import Header from "./Header";
+import SideBar from "./SideBar";
+import Page from "./Page";
+import PageD from "./PageS";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="container">
+      <div className="header">
+        <Header />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="menu">
+        <SideBar />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <div className="content">
+        <Routes>
+          <Route path="/dashboard" element={<PageD />} />
+          <Route path="/projects" element={<Page />} />
+          <Route path="/teams" element={<Page />} />
+          <Route path="/analytics" element={<Page />} />
+          <Route path="/messages" element={<Page />} />
+          <Route path="/integrations" element={<Page />} />
+          <Route path="*" element={<Page />} />
+        </Routes>
+      </div>
+      <div className="footer">
+        <DataTable />
+      </div>
+    </div>
+  );
 }
 
-export default App
+export default App;
