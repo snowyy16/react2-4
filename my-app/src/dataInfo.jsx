@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import "./DataInfo.css";
 
-function dataTotalInfo() {
+function DataInfo() {
   const [summary, setSummary] = useState([]);
   //callapi
   useEffect(() => {
@@ -78,4 +78,4 @@ function dataTotalInfo() {
   );
 }
 
-export default dataTotalInfo;
+export default DataInfo;
