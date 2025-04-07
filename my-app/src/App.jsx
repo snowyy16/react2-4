@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 
 import DataTable from "./dataTable";
 import Header from "./Header";
-import SideBar from "./SideBar";
+import SideBar from "./sideBar";
 import Page from "./Page";
 import PageD from "./PageS";
 
