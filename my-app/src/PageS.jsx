@@ -1,10 +1,10 @@
 import React from "react";
-import DataTotalInfo from "./dataInfo";
+import DataInfo from "./dataInfo";
 
 function PageS() {
   return (
     <div>
-      <dataTotalInfo />
+      <DataInfo />
     </div>
   );
 }
