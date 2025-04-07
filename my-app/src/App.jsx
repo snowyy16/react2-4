@@ -6,7 +6,7 @@ import DataTable from "./dataTable";
 import Header from "./Header";
 import SideBar from "./sideBar";
 import Page from "./Page";
-import PageD from "./PageS";
+import PageS from "./PageS";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       </div>
       <div className="content">
         <Routes>
-          <Route path="/dashboard" element={<PageD />} />
+          <Route path="/dashboard" element={<PageS />} />
           <Route path="/projects" element={<Page />} />
           <Route path="/teams" element={<Page />} />
           <Route path="/analytics" element={<Page />} />
