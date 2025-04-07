@@ -1,0 +1,213 @@
+/* Style cho các badge trạng thái */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .status-badge.new {
+    background-color: #e3f2fd;
+    color: #1976d2;
+  }
+  
+  .status-badge.in-progress {
+    background-color: #fff8e1;
+    color: #ff8f00;
+  }
+  
+  .status-badge.completed {
+    background-color: #e8f5e9;
+    color: #388e3c;
+  }
+  
+  /* Container của bảng */
+  .data-table-container {
+    margin: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  /* Style cho avatar */
+  .customer-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  .report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .report-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .report-title h3 {
+    margin: 0;
+    font-size:25px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .report-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .report-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon-button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .icon-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .icon-button img {
+    width: 16px;
+    height: 16px;
+  }
+  /* Thêm vào DataTable.css */
+
+/* Edit button */
+.edit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+  background-color: #f0f0f0;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 8px;
+  width: 500px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #e9ecef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.modal-body {
+  padding: 24px;
+}
+
+.modal-row {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.modal-label {
+  font-weight: bold;
+  min-width: 150px;
+  color: #495057;
+}
+
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e9ecef;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.modal-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #ced4da;
+  background-color: rgb(247, 23, 23);
+  cursor: pointer;
+  transition: all 0.2s;
+  color:white;
+}
+
+.modal-button.primary {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+.modal-button:hover {
+  background-color: #f8f9fa;
+}
+
+.modal-button.primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+/* Thêm vào DataTable.css */
+
+.modal-input {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.modal-input:focus {
+  outline: none;
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+select.modal-input {
+  height: 36px;
+}
