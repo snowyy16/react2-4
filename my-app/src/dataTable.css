@@ -1,4 +1,3 @@
-/* Style cho các badge trạng thái */
 .status-badge {
     padding: 4px 8px;
     border-radius: 12px;
@@ -21,7 +20,6 @@
     color: #388e3c;
   }
   
-  /* Container của bảng */
   .data-table-container {
     margin: 20px;
     border: 1px solid #e0e0e0;
@@ -30,7 +28,6 @@
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   }
   
-  /* Style cho avatar */
   .customer-avatar {
     width: 32px;
     height: 32px;
@@ -91,7 +88,7 @@
     width: 16px;
     height: 16px;
   }
-  /* Thêm vào DataTable.css */
+ 
 
 /* Edit button */
 .edit-button {
@@ -107,7 +104,7 @@
   background-color: #f0f0f0;
 }
 
-/* Modal styles */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -192,7 +189,6 @@
   background-color: #0b5ed7;
   border-color: #0a58ca;
 }
-/* Thêm vào DataTable.css */
 
 .modal-input {
   padding: 8px;

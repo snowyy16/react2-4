@@ -235,7 +235,7 @@ const DataTableComponent = () => {
     }
   };
 
-  // Custom styles cho bảng
+  
   const customStyles = {
     headRow: {
       style: {
@@ -389,8 +389,6 @@ const DataTableComponent = () => {
           </div>
         </div>
       )}
-
-      {/* Modal thêm mới */}
       {isAddModalOpen && (
         <div className="modal-overlay">
           <div className="modal-content">
